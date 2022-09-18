@@ -11,3 +11,209 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.navbar {
+  background-color: rgb(34, 34, 32);
+  padding: 10px;
+  margin-bottom: 5px;
+  justify-content: space-between;
+}
+/* .navHead{
+  width:"200px";
+  margin-top: 20px; */
+/* }  */
+.nav-links:hover{
+  width: auto;
+  height: 40px;
+  border-radius: 5px;
+  align-items: center;
+  background-color:  hsl(219, 100%, 50%);
+  color: white;
+}
+.nav-links:focus{
+  background: hsl(219, 100%, 50%);
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+}
+.carousel-images{
+  width: 1100px;
+  height: 550px;
+  margin-top: 15px;
+}
+.sliderText{
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+.carousel-words p{
+  color: red;
+  font-size: 30px;
+}
+.carousel-words em{
+  color: white;
+}
+.card-page{
+  /* display: flex;
+  display: inline-flex; */
+  /* margin-left: 100px; */
+  margin-top: 20px;
+  
+}
+.card-page img{
+ width: 500px;
+ margin-left: 370px;
+ padding: 20;
+}
+.card-text{
+  margin-left: 90px;
+  width: 650px;
+}
+/* .card-body{
+  width: 1000px;
+} */
+.card-page h3{
+  margin-left: -100px;
+ color: hsl(219, 100%, 50%);
+ font-size: 50px;
+ margin-right: 30px;
+ font-weight: bold;
+}
+.card-page p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.lines{
+  color: red;
+  height: 5px;
+  width: 500px;
+}
+.principles-page{
+  background-color: hsl(219, 100%, 50%);
+  width: 80vw;
+  margin-left: 150px;
+  height: 420px;
+}
+.principles-text{
+  color: white;
+  width: 500px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: large;
+  margin-top: 20px;
+}
+.principles-page  img {
+  width: 400px;
+  height: 380px;
+  
+}
+.principles-page  h3{
+  width: 350px;
+height: 320px;
+font-size: 40px;
+color: white;
+margin: 0 0 0 190px;
+/* background-color: lightgray; */
+transform: rotate(-90deg);
+}
+.patner-title{
+  color: hsl(219, 100%, 50%);
+  font-size: 40px;
+  font-weight: bold;
+}
+.partner-card{
+  width: 80vw;
+  /* height: 50px; */
+  margin-left: 150px;
+}
+.pics-one img{
+  margin-left: 30px;
+  width: 300px;
+  margin-top: 15px;
+}
+.pics-two{
+  margin-left: 30px;
+  /* margin-top: 5px; */
+}
+.pics-two img{
+width: 200px;
+margin-left: 30px;
+margin-top: 15px;
+}
+.creation-text{
+  color:  hsl(219, 100%, 50%);
+  font-size: 25px;
+  margin-left: 120px;
+  width: 500px;
+  
+}
+.pics-three img{
+  width: 200px;
+margin-left: 80px;
+}
+.principle-page img{
+ margin-left: 400px;
+ /* margin-bottom: 100px; */
+}
+.principle-page{
+  /* height: 50px; */
+  margin-bottom: 40px;
+}
+
+.navhead{
+  background-color: black;
+  width: 200px;
+  height: 160px;
+  opacity: none;
+}
+.menu-icon{
+  border-radius: 0px;
+  margin-left: 900px;
+}
+.menu-words{
+  color: white;
+  background-color: hsl(219, 100%, 50%);
+  width: 500px;
+  height: 60px;
+
+}
+.menu-page{
+  background-image: url("Images/Round2.jpg");
+  width: 600px;
+}
+.footer{
+  background-image: url("Images/footer1.png");
+  background-size: contain;
+  /* background-color: black; */
+  background-size: contain;
+  background-repeat: repeat;
+  padding: 10px;
+}
+.footer-text{
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+  font-style: italic;
+  
+}
+.footer-buttons{
+  width: 300px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.facebook-icons{
+  width: 40px;
+  border-radius: 2px;
+}
+.facebook-icon{
+  width: 30px;
+  margin-right: 20px;
+}
+.footer-placeholder{
+  display: flex;
+  margin-left: 20px;
+}
+.footer-lists{
+  color: white;
+  font-size: 18px;
+}
