@@ -3,7 +3,6 @@ import CardComponent from './cardComponent';
 import CardsComponent from './cardsComponent';
 import CarouselComponent from './carouselComponent';
 import CreationComponent from './creationComponent';
-import FooterComponent from './footerComponent';
 import OverlayComponent from './overlayComponent';
 import PrinciplesComponent from './principlesComponent';
 
@@ -20,7 +19,7 @@ const Home = () => {
             <strong className='lines'><hr></hr></strong>
             <CreationComponent />
             <strong className='lines'><hr></hr></strong>
-            <FooterComponent />
+            
         </div>
      );
 }

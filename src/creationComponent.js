@@ -5,20 +5,20 @@ import Image from 'react-bootstrap/Image';
 
 const CreationComponent = () => {
     return (  
-        <div className='principle-page'>
-            <Row className='container-fluid mt-5 mb-5'>
+        <div className='creation-page'>
+            <Row className='container-fluid mt-3 mb-3' xs={1} md={2} lg={2}>
                     
-                    <Col xs={6} md={4} lg={3}>
+                    <Col >
                         <div className='creation-text'>
 
-                       <p>Biz Tax is  Sponsored and created for the <br /> Delta State Government. </p>
+                       <p>Biz Tax is  Sponsored and created for the  Delta <br /> State  Government. </p>
                    
                  
                           
                           
                     </div>
                     </Col>
-                    <Col xs={12} md={4} lg={3}>
+                    <Col >
                         <div className='p-3'>
                           <Image src={Bridge}  width="150px"/>
                         </div>

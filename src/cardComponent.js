@@ -11,9 +11,9 @@ const CardComponent = () => {
     return (
         <div className='card-page'>
             
-            <Row className='container-fluid mt-5 mb-5'>
+            <Row className='container-fluid mt-3 mb-3' xs={1} md={2} lg={2}>
                     
-                    <Col xs={6} md={4} lg={3}>
+                    <Col >
                         <div className='card-text'>
                         <h3 className='card-title'>
                         ABOUT US

@@ -17,7 +17,7 @@ const NavbarComponent = () => {
         <div className='nav-items'>
             <Navbar collapseOnSelect expand="lg" variant="dark">
       <Container>
-        <Image src={Logo} className='navHead' width="200px"/>
+        <Image src={Logo} className='navHead' />
         {/* <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -26,9 +26,9 @@ const NavbarComponent = () => {
             <Nav.Link href="/" className='nav-links' >HOME</Nav.Link>
             <Nav.Link href="/about" className='nav-links'>ABOUT</Nav.Link>
             <Nav.Link href="/calculator" className='nav-links'>eCALCULATOR</Nav.Link>
-            <Nav.Link href="/about" className='nav-links'>CONTACTS</Nav.Link>
-            <Nav.Link href="/about" className='nav-links'>LOGIN</Nav.Link>
-            <Nav.Link href="/about" className='nav-links'>SIGN-UP</Nav.Link>
+            <Nav.Link href="/contact" className='nav-links'>CONTACTS</Nav.Link>
+            <Nav.Link href="/login" className='nav-links'>LOGIN</Nav.Link>
+            <Nav.Link href="/signin" className='nav-links'>SIGN-UP</Nav.Link>
           </Nav>
           <Nav>
             {/* <Nav.Link href="/signIn">Sign Up</Nav.Link>

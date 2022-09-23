@@ -6,6 +6,11 @@ import Home from './home';
 import CardComponent from './cardComponent';
 import ErrorPage from './errorPage';
 import CalculatorComponent from './calculator';
+import FooterComponent from './footerComponent';
+import SuccessComponent from './successComponent';
+import Login from './LoginComponent';
+import Signup from './SignupComponent';
+import Contactus from './ContactusComponent';
 
 
 function App() {
@@ -25,12 +30,27 @@ function App() {
             <Route exact  path="/calculator">
             <CalculatorComponent />
             </Route>
+            <Route exact  path="/success">
+            <SuccessComponent />
+            </Route>
+            <Route exact  path="/login">
+            <Login />
+            </Route>
+            <Route exact  path="/signin">
+            <Signup />
+            </Route>
+            <Route exact  path="/contact">
+            <Contactus />
+            </Route>
             
             <Route path="*">
           <ErrorPage />
         </Route>
         </Switch>
       </Router>
+      <footer>
+        <FooterComponent />
+      </footer>
     </div>
   );
 }

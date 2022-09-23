@@ -11,9 +11,9 @@ const OverlayComponent = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true); 
     return (
-        <div>
+        <div className='container-fluid mt-3 mb-3' xs={1} md={2} lg={2}>
 
-            <>
+            {/* <> */}
                 <Button variant="outline" onClick={handleShow}>
                 <Image src={menu}  width="50px" className='menu-icon'/>
                 </Button>
@@ -24,21 +24,30 @@ const OverlayComponent = () => {
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <div className='menu-page'>
-                            <h4  className='menu-words'>Company Income Tax (CIT)</h4> <br />
-                            <strong><hr></hr></strong>
-                            <h4  className='menu-words'>Personal Income Tax (PIT)</h4><br />
-                            <strong><hr></hr></strong>
-                            <h4  className='menu-words'>WithholdingTax (WHT)</h4> <br />
-                            <strong><hr></hr></strong> 
-                            <h4  className='menu-words'>Value Added Tax (VAT)</h4> <br />
-                            <strong><hr></hr></strong> 
-                            <h4  className='menu-words'>Stamp Duty (SD)</h4> <br />
-                            <strong><hr></hr></strong> 
-                            <h4  className='menu-words'>Capital Gains Tax (CGT)</h4> <br />
+                            <Button variant="primary" type="submit" className="menu-words">
+                            Companies Income Taxes (CIT)
+                          </Button>
+                          <strong className='lines'><hr></hr></strong>
+                          <Button variant="primary" type="submit" className="menu-words">
+                            Value Added Tax (VAT)
+                          </Button>
+                          <strong className='lines'><hr></hr></strong>
+                          <Button variant="primary" type="submit" className="menu-words">
+                            Withholding Tax (WIT)
+                          </Button>
+                          <strong className='lines'><hr></hr></strong>
+                          <Button variant="primary" type="submit" className="menu-words">
+                            Petroleum Profit Tax (PPT)
+                          </Button>
+                          <strong className='lines'><hr></hr></strong>
+                          <Button variant="primary" type="submit" className="menu-words">
+                            Personal Income Tax (PIT)
+                          </Button>
+                          
                         </div>
                     </Offcanvas.Body>
                 </Offcanvas>
-            </>
+            {/* </> */}
 
         </div>
     );

@@ -1,29 +1,31 @@
 // import Card from 'react-bootstrap/Card';
-import Bridge from './Images/Round3.jpg';
+import Bridge from './Images/taxs.jpg';
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Image from 'react-bootstrap/Image';
 
 const PrinciplesComponent = () => {
     return (
-        <div className='principles-page'>
-            <Row className='container-fluid mt-5 mb-5'>
-                <Col xs={6} md={4} lg={3}>
+        <div className='principles-page '>
+            <Row className='container-fluid mt-3 mb-3' xs={1} md={2} lg={2}>
+                <Col >
                         <div className='p-3'>
                             <Image src={Bridge} width="200px" />
                         </div>
 
                 </Col>
-                <Col xs={12} md={4} lg={3}>
-                        <div className='p-3'>
+                {/* <Col xs={12} md={4} lg={3}> */}
+                        
+               
+                {/* </Col> */}
+                <Col >
+                <div className='principles-text'>
                         <h3 className='principle-title'>
                             OUR PRINCIPLES
                         </h3>
-                        </div>
-
-                </Col>
-                <Col xs={12} md={4} lg={3}>
-                    <div className='principles-text'>
+                        
+                
+                   
                         
                     <ul>
                         <li>
