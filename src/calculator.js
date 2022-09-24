@@ -4,15 +4,9 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Image from 'react-bootstrap/Image';
 import * as React from 'react';
-// import Radio from '@mui/material/Radio';
-// import RadioGroup from '@mui/material/RadioGroup';
-// import FormControlLabel from '@mui/material/FormControlLabel';
-// import FormControl from '@mui/material/FormControl';
-// import Button from 'react-bootstrap/esm/Button';
 import IncomeComponent from "./incomeComponent";
 import PaymentComponent from "./paymentComponent";
 import DeductionComponent from "./deductionComponent";
-// import FormLabel from '@mui/material/FormLabel';
 
 const CalculatorComponent = () => {
     return (

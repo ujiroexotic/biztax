@@ -23,7 +23,7 @@ const FooterComponent = () => {
             <Row className='container-fluid mt-5 mb-5'>
                     <Col xs={12} md={4} lg={3}>
                         <div className='p-3'>
-                          <Image src={Logo} className='navhead' />
+                          <Image src={Logo} width="170px"/>
                           <p className="footer-text">lets make Tax not Taxing</p>
                         </div>
                     </Col>
@@ -78,7 +78,7 @@ const FooterComponent = () => {
                           <h3 className="text-light">
                             LEGAL
                           </h3>
-                          <ul className="footer-lists">
+                          <ul className="footer-lists" >
                             <li>
                               Terms and Conitions
                             </li>

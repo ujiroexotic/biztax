@@ -1,29 +1,26 @@
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-// import Spinner from 'react-bootstrap/Spinner';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
 import Form from 'react-bootstrap/Form';
-// import Card from 'react-bootstrap/Card';
 import { useHistory } from 'react-router-dom';
 import { useState } from 'react';
-// import api from './api';
-import axios from 'axios';
 import swal from 'sweetalert';
-import google from './Images/google.png'
+import google from './Images/google.png';
+import api from './api';
 
 const Signup = () => {
 
    
     const [SignupDetails, setSignupDetails] = useState({
-      "firstName": "",
-      "lastName": "",
-      "email": "",
-      "city": "",
-      "companyName": "",
-      "companyRegNo": "",
-      "password": "",
+      firstName: "",
+      lastName: "",
+      email: "",
+      city: "",
+      companyName: "",
+      companyRegNo: "",
+      password: "",
             error_list: []
           
     });
@@ -34,61 +31,54 @@ const Signup = () => {
       setSignupDetails({
         ...SignupDetails, [e.target.name] : e.target.value
       })
+        // console.log(SignupDetails)
+
     }
   
-    const History = useHistory()
+    const history = useHistory()
     const handleSubmit = (e) => {
       e.preventDefault();
       const data = {
-        FirstName: SignupDetails.firstName,
-        LastName: SignupDetails.lastName,
+        firstName: SignupDetails.firstName,
+        lastName: SignupDetails.lastName,
         email: SignupDetails.email,
-        CompanyName: SignupDetails.companyName,
-        CompanyRegNo: SignupDetails.CompanyRegNo,
+        city: SignupDetails.city,
+        companyName: SignupDetails.companyName,
+        companyRegNo: SignupDetails.companyRegNo,
         password: SignupDetails.password
 
 
       }
       const Signup = async () => {
         try {
-  
-           const response = await axios.post('https://biztax-backend.herokuapp.com/api/v1/user/adduser', {
-            firstName: data.FirstName,
-             lastName: data.LastName,
+
+          console.log(data);
+           const response = await api.post('/adduser', {
+            firstName: data.firstName,
+             lastName: data.lastName,
               email:  data.email,
-              companyName: data.CompanyName,
-              companyRegNo: data.CompanyRegNo,
+              city:  data.city,
+              companyName: data.companyName,
+              companyRegNo: data.companyRegNo,
               password: data.password,
           })
-          if(response.data.status === 201){
-             console.log(response.data)
+          if(response.data.newUser){
+            //  console.log(response.data)
+            //  console.log(data)
               localStorage.setItem('token', response.data.token);
               localStorage.setItem('username', response.data.newUser);
               swal("Success", response.data.message, "success")
-              History.push('/login')
+              history.push('/login')
             }
             else{
-              setSignupDetails({
-                ...SignupDetails, error_list: response.data.validation_errors
-              })
+              // setSignupDetails({
+              //   // ...SignupDetails, error_list: response.data.validation_errors;
+               
+              // })
+              console.log('error here')
             }
 
-          // .then(
-            // res => {
-              // if(res.data.status === 201){
-              //  console.log(res.data)
-              //   localStorage.setItem('token', res.data.token);
-              //   localStorage.setItem('username', res.data.newUser);
-              //   swal("Success", res.data.message, "success")
-              //   History.push('/login')
-              // }
-              // else{
-              //   setSignupDetails({
-              //     ...SignupDetails, error_list: res.data.validation_errors
-              //   })
-              // }
-            // }
-          // )
+          
    
         } catch (error) {
           console.log(error);
@@ -139,8 +129,8 @@ const Signup = () => {
               }} 
             type="text"
             placeholder="First Name" 
-            name="First Name" value={SignupDetails.FirstName} onChange={handleInput} />
-             <Form.Text className="text-danger">{SignupDetails.error_list.FirstName}
+            name="firstName" value={SignupDetails.firstName} onChange={handleInput} />
+             <Form.Text className="text-danger">{SignupDetails.error_list.firstName}
                 </Form.Text>
           </Form.Group>
 
@@ -153,8 +143,8 @@ const Signup = () => {
               maxWidth: '499px'
               }}
                type="text" placeholder="Last Name" 
-               name="Last Name" value={SignupDetails.LastName} onChange={handleInput}/>
-                <Form.Text className="text-danger">{SignupDetails.error_list.LastName}
+               name="lastName" value={SignupDetails.lastName} onChange={handleInput}/>
+                <Form.Text className="text-danger">{SignupDetails.error_list.lastName}
                 </Form.Text>
           </Form.Group>
         </Row>
@@ -174,7 +164,7 @@ const Signup = () => {
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridState">
-            <Form.Select className="py-3"
+            <Form.Select className="py-3" name="city"  onChange={handleInput}
             style={{
               backgroundColor: '#D9D9D9', 
               borderRadius: '10px',
@@ -245,9 +235,9 @@ const Signup = () => {
               borderRadius: '10px',
               height: '60px',
               maxWidth: '499px'
-              }} type="Company Name" placeholder="Company Name" 
-              name="Company Name" value={SignupDetails.CompanyName} onChange={handleInput} />
-               <Form.Text className="text-danger">{SignupDetails.error_list.CompanyName}
+              }} type="text" placeholder="Company Name" 
+              name="companyName" value={SignupDetails.companyName} onChange={handleInput} />
+               <Form.Text className="text-danger">{SignupDetails.error_list.companyName}
                 </Form.Text>
           </Form.Group>
 
@@ -258,9 +248,9 @@ const Signup = () => {
               borderRadius: '10px',
               height: '60px',
               maxWidth: '499px'
-              }} type="Company Registration No." placeholder="Company Registration No." 
-              name="Company Registration No." value={SignupDetails.CompanyRegistrationNo} onChange={handleInput}/>
-               <Form.Text className="text-danger">{SignupDetails.error_list.CompanyRegistrationNo}
+              }} type="text" placeholder="Company Registration No." 
+              name="companyRegNo" value={SignupDetails.companyRegistrationNo} onChange={handleInput}/>
+               <Form.Text className="text-danger">{SignupDetails.error_list.companyRegistrationNo}
                 </Form.Text>
           </Form.Group>
         </Row>

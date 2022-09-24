@@ -18,15 +18,12 @@ code {
   justify-content: space-between;
 }
 .navHead{
-  width: 200px;
+  width: 170px;
   
 }
 
 
-/* .navHead{
-  width:"200px";
-  margin-top: 20px; */
-/* }  */
+
 .nav-links:hover{
   width: auto;
   height: 40px;
@@ -214,6 +211,7 @@ margin-top: 20px;
 
 .menu-icon{
   border-radius: 0px;
+  display: flex-end;
   /* margin-left: 100px; */
 }
 .menu-words{
@@ -267,6 +265,7 @@ margin-top: 20px;
 .footer-lists{
   color: white;
   font-size: 18px;
+  list-style-type: none;
 }
 .calcu-buttons{
   width: 550px;
