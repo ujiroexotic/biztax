@@ -11,12 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .navbar {
   background-color: rgb(34, 34, 32);
   padding: 10px;
   margin-bottom: 5px;
   justify-content: space-between;
 }
+
 .navHead{
   width: 170px;
   
@@ -43,24 +45,29 @@ code {
   border-radius: 3px;
   font-size: 20px;
 }
+
 .carousel-images{
   width: 1100px;
   height: 550px;
   margin-top: 15px;
 }
+
 .sliderText{
   color: black;
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 80px;
 }
+
 .carousel-words p{
   color: red;
   font-size: 30px;
 }
+
 .carousel-words em{
   color: white;
 }
+
 .card-page{
   /* display: flex;
   display: inline-flex; */
@@ -68,18 +75,19 @@ code {
   margin-top: 20px;
   
 }
+
 .card-page img{
  width: 530px;
  margin-left: 5px;
  padding: 20;
 }
+
 .card-text{
   margin-left: 50px;
   width: 650px;
 }
-/* .card-body{
-  width: 1000px;
-} */
+
+
 .card-page h3{
   margin-left: -90px;
  color: hsl(219, 100%, 50%);
@@ -87,6 +95,7 @@ code {
  margin-right: 30px;
  font-weight: bold;
 }
+
 .card-page p{
   font-size: 20px;
   font-weight: bold;
@@ -98,6 +107,7 @@ code {
   margin-left: 120px;
   height: 440px;
 }
+
 .principles-text{
   color: white;
   width: 550px;
@@ -106,20 +116,12 @@ code {
   font-size: large;
   margin-top: 10px;
 }
+
 .principles-page  img {
   width: 400px;
   height: 380px;
-  
 }
-/* .principles-page  h3{
-  width: 350px;
-height: 320px;
-font-size: 40px;
-color: white;
-margin: 0 0 0 140px;
-/* background-color: lightgray; */
-/* transform: rotate(-90deg); */ */
-/* } */
+
 .principles-page  h3{
   color: white;
   width: 400px;
@@ -128,53 +130,61 @@ margin: 0 0 0 140px;
   margin-left: 150px;
   font-weight: bold;
 }
+
 .patner-title{
   color: hsl(219, 100%, 50%);
   font-size: 50px;
   font-weight: bold;
 }
+
 .partner-card{
   width: 80vw;
-  /* height: 50px; */
   margin-left: 150px;
 }
+
 .pics-one{
   height: 150px;
   width: 300px;
   border: 1px solid rgb(117, 113, 113);
 }
+
 .pics-one img{
   margin-left: 10px;
   width: 250px;
   margin-top: 40px;
 }
+
 .pics-two{
   margin-left: 40px;
   width: 300px;
   height: 150px;
   border: 1px solid rgb(117, 113, 113);
-  /* margin-top: 5px; */
 }
+
 .pics-two img{
 width: 190px;
 margin-left: 10px;
 margin-top: 30px;
 }
+
 .pics-three{
   margin-left: 40px;
   width: 300px;
   height: 150px;
   border: 1px solid rgb(117, 113, 113);
 }
+
 hr{
   background: linear-gradient(to right, hwb(0 2% 51%), red, blue);
   height: 5px;
 }
+
 .pay-stack{
   height: 200px;
   width: 350px;
   margin-right: 20px;
 }
+
 .creation-text{
   color:  hsl(219, 100%, 50%);
   font-size: 25px;
@@ -183,22 +193,24 @@ hr{
   width: 550px;
   
 }
+
 .creation-page img{
   width: 150px;
   margin-left: 50px;
   padding: 30;
 }
+
 .pics-three img{
   width: 190px;
 margin-left: 40px;
 margin-top: 20px;
 }
+
 .principle-page img{
  margin-left: 400px;
- /* margin-bottom: 100px; */
 }
+
 .principle-page{
-  /* height: 50px; */
   margin-bottom: 40px;
 }
 
@@ -212,32 +224,32 @@ margin-top: 20px;
 .menu-icon{
   border-radius: 0px;
   display: flex-end;
-  /* margin-left: 100px; */
 }
+
 .menu-words{
   color: white;
-  /* background-color: hsl(219, 100%, 50%); */
   margin-bottom: 12px;
   width: 500px;
   height: 60px;
   font-size: 50px;
-  /* margin-right: 40px; */
 
 }
+
 .menu-page{
-  background-image: url("Images/tax.jpg");
+  background-image: url("./Images/tax.jpg");
   width: 600px;
   height: 600px;
 }
+
 .footer{
-  background-image: url("Images/footer1.png");
+  background-image: url("./Images/footer1.png");
   background-size: contain;
-  /* background-color: black; */
   background-size: contain;
   background-repeat: repeat;
   padding: 10px;
   margin-top: 60px;
 }
+
 .footer-text{
   color: white;
   font-size: 18px;
@@ -245,28 +257,34 @@ margin-top: 20px;
   font-style: italic;
   
 }
+
 .footer-buttons{
   width: 300px;
   margin-bottom: 10px;
   border-radius: 3px;
 }
+
 .facebook-icons{
   width: 40px;
   border-radius: 2px;
 }
+
 .facebook-icon{
   width: 30px;
   margin-right: 20px;
 }
+
 .footer-placeholder{
   display: flex;
   margin-left: 20px;
 }
+
 .footer-lists{
   color: white;
   font-size: 18px;
   list-style-type: none;
 }
+
 .calcu-buttons{
   width: 550px;
   border-radius: 13px;
@@ -277,6 +295,7 @@ margin-top: 20px;
  color: white;
  font-size: 20px;
 }
+
 .calcu-title{
   
   font-weight: bold;
@@ -284,35 +303,39 @@ margin-top: 20px;
   font-size: 50px;
   margin-left: 30px;
 }
+
 .calcu-body{
   margin-left: 50px;
   margin-top: 15px;
   font-size: 20px;
 }
+
 .calcu-h1{
   margin-top: 85px;
 }
+
 .calcu-text{
   margin-left: 50px;
   margin-top: 45px;
 }
+
 .calcu-row{
-  /* width: 800px; */
   height: 400px;
 }
+
 .calcu-row img{
-  /* margin-left: 10px; */
   margin-right: 10px;
 }
+
 .income-input{
   width: 320px;
   height: 50px;
   border-radius: 15px;
   border: 0px;
   background-color: rgb(243, 211, 243);
-  /* margin-right: 20PX; */
   margin-left: 25px;
 }
+
 .income-button{
   width: 250px;
   height: 52px;
@@ -323,8 +346,8 @@ margin-top: 20px;
   border: 0px;
   font-weight: bold;
   background-color: whitesmoke;
-  /* background-color: black; */
 }
+
 .income-buttons{
   width: 300px;
   height: 52px;
@@ -337,6 +360,7 @@ margin-top: 20px;
   background-color: whitesmoke;
   margin-top: 10px;
 }
+
 .income-buttonsS{
   width: 300px;
   height: 52px;
@@ -349,41 +373,49 @@ margin-top: 20px;
   background-color: whitesmoke;
   margin-top: 15px;
 }
+
 .income-buttin{
   width: 700px;
   margin-left: 250px;
-  /* background-color: aliceblue; */
 }
+
 .error-image{
   width: 500px;
   margin-left: 50px;
 }
+
 .error-text{
   margin-top: 70px;
   margin-right: 80px;
   width: 400px;
 
 }
+
 .error-page h3{
+
   font-size: 40px;
   font-weight: bold;
 }
+
 .error-page p{
+
   font-size: 23px;
 }
+
 .error-page button{
   width: 200px;
   border-radius: 18px;
 }
+
 .empty-button{
   width: 600px;
-  /* margin-bottom: 20px; */
 
 }
 .deduction-h5{
   font-size: 20px;
   color: rgb(59, 59, 109);
 }
+
 .deduction-button{
   width: 320px;
   height: 80px;
@@ -393,50 +425,58 @@ margin-top: 20px;
   border: 0px;
   font-weight: bold;
   
+
 }
+
 .deduction-input{
   width: 320px;
   height: 80px;
   border-radius: 15px;
   border: 0px;
   background-color: rgb(228, 150, 228);
-  /* margin-right: 20PX; */
   margin-left: 25px;
 }
+
 .button-tax{
   color: red;
   width: 250px;
   border: 0px;
   border-radius: 15px;
   height: 50px;
-  font-size: 25px;background-color: rgb(247, 221, 225);
+  font-size: 25px;
+  background-color: rgb(247, 221, 225);
 }
+
 .success-page{
-  background-image: url("Images/background.jpg");
+  background-image: url("./Images/background.jpg");
   height: 300px;
 }
+
 .success-page h2{
   color: rgb(170, 10, 10);
   font-size: 25px;
   font-weight: bold;
 }
+
 .success-page p{
   font-size: 25px;
   font-weight: bold;
   color: white;
 }
+
 .success-image{
-  width: "70px" ;
+  width: "70px";
   height: "50";
   margin-top: 35px;
 }
+
 .login-image{
   margin-bottom: 60px;
   width: 750px;
   height: 450px;
   margin-top: 20px;
-  /* margin-right: 50px; */
 }
+
 .login-button{
   margin-top: 50px;
   margin-bottom: 50px;

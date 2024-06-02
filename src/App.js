@@ -1,6 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
+import "./index.css";
 import NavbarComponent from './navbarComponent';
 import Home from './home';
 import CardComponent from './cardComponent';
